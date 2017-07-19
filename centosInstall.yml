@@ -1,0 +1,6 @@
+---
+- hosts: 52.14.194.15
+  become: true
+  tasks:
+    - name: install wget bro
+      yum: name=wget state=present update_cache=yes

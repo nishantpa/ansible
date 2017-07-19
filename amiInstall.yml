@@ -1,0 +1,13 @@
+---
+- hosts: 54.198.110.140
+  remote_user: ec2-user
+  become_method: sudo 
+  gather_facts: yes
+  connection: ssh
+  tasks:
+    - name: Execute shell command to list directory 
+      shell: ls -al ~
+      register: result
+    
+    - name: Display results in JSON format
+      debug: var=result

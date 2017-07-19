@@ -1,0 +1,9 @@
+---
+- hosts: 54.198.110.140
+  user: ec2-user
+  become_method: sudo
+  gather_facts: yes
+  connection: ssh
+  tasks:
+    - name: Update all packages to latest
+      yum: name=* state=latest
