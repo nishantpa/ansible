@@ -47,5 +47,5 @@ jumper ansible_port=32769 ansible_host=192.168.99.100
 [all:vars]
 ansible_connection=ssh
 ansible_ssh_user=root
-ansible_ssh_pass=321369np
+ansible_ssh_pass=XXXXXX
 
